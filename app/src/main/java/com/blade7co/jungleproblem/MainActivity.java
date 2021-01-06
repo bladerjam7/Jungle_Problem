@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.Random;
@@ -19,9 +20,9 @@ public class MainActivity extends AppCompatActivity {
     private TextView monkeyCount;
     private TextView snakeCount;
 
-    private Button tigerBtn;
-    private Button monkeyBtn;
-    private Button snakeBtn;
+    private ImageView tigerBtn;
+    private ImageView monkeyBtn;
+    private ImageView snakeBtn;
 
     private String [] food = {  "meat",
                                 "fish",
@@ -43,9 +44,9 @@ public class MainActivity extends AppCompatActivity {
         monkeyCount = findViewById(R.id.tv_monkey_counter);
         snakeCount = findViewById(R.id.tv_snake_counter);
 
-        tigerBtn = findViewById(R.id.btn_tiger);
-        monkeyBtn = findViewById(R.id.btn_monkey);
-        snakeBtn = findViewById(R.id.btn_snake);
+        tigerBtn = findViewById(R.id.iv_tiger);
+        monkeyBtn = findViewById(R.id.iv_monkey);
+        snakeBtn = findViewById(R.id.iv_snake);
 
         tigerBtn.setOnClickListener(new View.OnClickListener() {
             @Override
